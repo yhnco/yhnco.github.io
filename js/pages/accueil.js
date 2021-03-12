@@ -1,4 +1,4 @@
-import tpl from '../utils/avecTemplateHtml.js' 
+import tpl from '../utils/AvecTemplateHtml.js' 
 
 export default tpl({
     template: 'accueil.html',

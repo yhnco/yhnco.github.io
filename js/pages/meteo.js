@@ -1,4 +1,4 @@
-import tpl from '../utils/avecTemplateHtml.js' 
+import tpl from '../utils/AvecTemplateHtml.js' 
 import { http_get, http_post } from '../utils/request.js'
 
 export default tpl({
