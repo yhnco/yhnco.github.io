@@ -1,6 +1,6 @@
-import Accueil from './pages/Accueil'
-import Ville from './pages/Ville'
-import Meteo from './pages/Meteo'
+import Accueil from './pages/accueil.js'
+import Ville from './pages/ville.js'
+import Meteo from './pages/meteo.js'
 
 export default new VueRouter({
     routes: [
