@@ -33,7 +33,7 @@ export default tpl({
       
       this.ville = this.$route.params.ville;
       
-      http_get('http://api.openweathermap.org/data/2.5/weather?q=' + this.ville + '&units=metric&appid=1d8216e4406967dd276e948b49f3cc94&lang=fr').then(data => {
+      http_get('https://api.openweathermap.org/data/2.5/weather?q=' + this.ville + '&units=metric&appid=1d8216e4406967dd276e948b49f3cc94&lang=fr').then(data => {
       if (data.cod == 200) {
         this.ville = data.name
         this.image = data.weather[0].main + ".jpg"
