@@ -85,7 +85,7 @@ export default tpl({
         this.vent = pointCardinal
         this.date = currentDateWithFormat
         this.icon = data.weather[0].icon
-        this.lienImg = 'http://openweathermap.org/img/wn/' + this.icon + '@2x.png'
+        this.lienImg = 'https://openweathermap.org/img/wn/' + this.icon + '@2x.png'
         this.etatCiel = data.weather[0].description.charAt(0).toUpperCase() + data.weather[0].description.slice(1)
         this.temperature = data.main.temp
         this.fuseauHoraire = data.timezone/60/60
