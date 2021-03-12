@@ -204,6 +204,7 @@ main {
     margin: 0px;
     background-color: #233d4d;
     font-family: inherit;
+    color: white;
 }
 
 #accueil {
@@ -211,14 +212,6 @@ main {
     text-align: center;
     color: #536b72;
     font-size: 1.5rem;
-}
-
-#accueil h1 {
-    color: #DCDCDD;
-}
-                  
-#accueil h2 {
-    color: #DCDCDD;
 }
 
 #infos {
