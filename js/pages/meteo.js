@@ -1,5 +1,5 @@
-import tpl from '../utils/avecTemplateHtml' 
-import { http_get, http_post } from '../utils/request'
+import tpl from '../utils/avecTemplateHtml.js' 
+import { http_get, http_post } from '../utils/request.js'
 
 export default tpl({
   template: 'meteo.html',
