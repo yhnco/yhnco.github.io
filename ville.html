@@ -1,0 +1,13 @@
+    <div id="content" class="formulaire">
+        <main>
+            <h1>Sélectionnez une ville</h1> 
+            <form action="#" method="POST" @submit="login">
+                <input type="text" name="nom" class="nom" placeholder="Ville" v-model="ville" required>
+                <br>
+                <input type="submit" value="Choisir" class="submit">
+            </form>
+            <router-link to="/" custom v-slot="{ navigate }">
+                <button @click="navigate" @keypress.enter="navigate" role="link">Retour à l'accueil</button>
+            </router-link>
+        </main>
+    </div>

@@ -1,0 +1,43 @@
+<div id="accueil" class="content">
+    <header>
+        <button id="translate" @click="translation">{{ lang }}</button>
+        <h1 id="yohan"><span style="color: #FE7F2D;">Y</span>ohan Coderre</h1>
+        <h2>{{ title }}</h2>   
+    </header>
+    <div class="content-wrapper">
+        <p>{{ introduction }}</p> 
+            <img src="media/images/iconfinder_Development_5355692.png" alt style="width: 8rem;"> 
+        <p>{{ projectDisplay }}</p>
+            <router-link to="/selection" custom v-slot="{ navigate }">
+                <button @click="navigate" @keypress.enter="navigate" role="link">{{ seeProject }}</button>
+            </router-link>
+        <p>{{ aboutMe }}</p>
+    </div>
+    
+    <ul id="infos">
+        <li>
+            <a target="_blank" href="https://www.linkedin.com/in/yohan-coderre-3522221a3/">
+                <img src="media/images/linkedin.png" alt style="width: 2rem;">
+                <br>
+                LinkedIn
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="mailto:yohan.coderre@outlook.com"><img src="media/images/email.webp" alt style="width: 2rem;">
+                <br>
+                yohan.coderre@outlook.com
+            </a>
+            </li>
+        <li>
+            <a target="_blank" href="media/CV-Yohan-Coderre-Web.docx">
+                <img src="media/images/curriculum.png" alt style="width: 2rem;">
+                <br>
+                Curriculum Vitae
+            </a>
+        </li>
+    </ul>
+   <footer>
+   <p>&copy Copyright Yohan Coderre 2021</p> 
+   </footer>
+</div>
+

@@ -1,0 +1,393 @@
+
+body {
+    margin: 0px;
+}
+
+ul {
+    padding: 0px;
+}
+
+.main-container {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+}
+
+.second-container {
+    overflow: auto;
+}
+
+.first-wrapper {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(8, 8, 8, 0.3);
+    padding: 10px;
+}
+
+.second-wrapper {
+    margin: auto;
+    padding: 30px;
+    width: fit-content;
+    margin-top: 17vh;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgba(8, 8, 8, 0.3);
+}
+
+.second-wrapper li {
+    padding: 20px;
+    text-align: center;
+}
+
+.third-wrapper {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgba(8, 8, 8, 0.3);
+    width: fit-content;
+    padding: 20px;
+    text-align: center;
+}
+
+.ville {
+    font-size: 52px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.date {
+    font-size: 24px;
+}
+
+.etat-du-ciel {
+    font-size: 30px;
+}
+
+.temperature {
+    font-size: 95px;
+}
+
+.vent {
+    font-size: 24px;
+}
+
+.fuseau {
+    font-size: 24px;
+}
+
+.precipitationsPluie {
+    font-size: 24px;
+}
+.precipitationsNeige {
+    font-size: 24px;
+}
+
+.etat-soleil  {
+    font-size: 24px;
+}
+
+.formulaire {
+    padding-top: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    background-image: url("../media/images/elio-santos-B6hw9ooyldM-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 850px;
+}
+
+main {
+    border-radius: 10px;
+    background-color: rgba(8, 8, 8, 0.3);
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+}
+
+#soleil {
+    margin-top: 50px;
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.formulaire button {
+    background-color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 3px black;
+    margin-bottom: 10px;
+    margin-top: 10vh;
+    transition-duration: 0.4s;
+    padding: 8px;
+}
+
+.formulaire button:hover {
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+}
+
+.main-container button {
+    background-color: rgba(8, 8, 8, 0.3);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 3px black;
+    margin-bottom: 10px;
+    transition-duration: 0.4s;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    padding: 8px;
+}
+
+.second-container button {
+    margin-bottom: 20px;
+   
+}
+
+.main-container button:hover {
+    color: white;
+    cursor: pointer;
+    background-color: #333333;
+}
+
+.submit {
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 3px black;
+    transition-duration: 0.4s;
+    padding: 8px;
+}
+
+.submit:hover {
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+}
+
+.nom {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 3px black;
+}
+
+#erreur {
+    font-size: 2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 30px;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#accueil header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0px;
+    background-color: #233d4d;
+    font-family: inherit;
+}
+
+#accueil {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    text-align: center;
+    color: #536b72;
+    font-size: 1.5rem;
+}
+
+#accueil h1 {
+    color: #DCDCDD;
+}
+                  
+#accueil h2 {
+    color: #DCDCDD;
+}
+
+#infos {
+    margin-top: 12vh;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#infos li {
+    text-decoration: none;
+    flex-grow: 1;
+    flex: 1 1 0px;
+}
+
+#infos a {
+    color: #536b72;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+#infos a:hover {
+    color: #FE7F2D;
+}
+
+#infos a #text {
+    margin: 10px;
+}
+
+#infos img {
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+#infos img:hover {
+    background-color: #FE7F2D;
+}
+
+#accueil button {
+    background-color: #FE7F2D; 
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 3px black;
+    margin: 20px;
+    transition-duration: 0.4s;
+    padding: 8px;
+}
+
+#accueil button:hover {
+    background-color: white;
+    color: #FE7F2D;
+    cursor: pointer;
+} 
+
+#accueil footer {
+    margin-top: 30vh;
+    position: relative;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;  
+}
+
+#translate {
+    position: absolute;
+    top:0;
+    right:0;
+    border-style: none;
+}
+
+@media screen and (min-width: 800px) {
+    .content-wrapper p {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .first-wrapper {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .first-wrapper li {
+        margin-top: 10px;
+    }
+
+    #accueil {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #accueil button {
+        margin: 0 auto;
+        display: block;
+        max-width: 145.41px;
+    }
+
+    .content-wrapper {
+        max-width: 580px;
+    }
+
+    #accueil h1, h2, p {
+        max-width: 580px;
+        align-items: center;
+    }
+
+    #infos {
+        max-width: 540px;
+        flex-direction: column;
+    }
+    
+    #infos li {
+        align-items: center;
+    }
+
+    #accueil footer {
+        margin-top: 3vh;
+    }
+
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .first-wrapper {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .first-wrapper li {
+        margin-top: 10px;
+    }
+
+    #accueil {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #accueil h1, h2, p {
+        max-width: 480px;
+    }
+
+    #accueil button {
+        margin :0 auto;
+        display: block;
+        max-width: 145.41px;
+    }
+
+    .content-wrapper {
+        max-width: 480px;
+    }
+
+    #infos {
+        max-width: 440px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #infos li {
+        align-items: center;
+    }
+
+    #accueil footer {
+        margin-top: 3vh;
+    }
+  }
+

@@ -1,0 +1,27 @@
+<div class="main-container" v-bind:style="{ backgroundImage: 'url(media/images/' + image + ')' }" >
+    <div id="erreur" v-if="error_message">
+        <p>Nous avons de la difficulté à trouver de l'information sur cette ville. Veuillez tenter une orthographe différente ou entrez une autre ville.</p>
+        <img src="media/images/iconfinder_stickfigure_8_4051033.png" atl style="width: 10rem;">
+        <router-link to="/selection" custom v-slot="{ navigate }">
+            <button @click="navigate" @keypress.enter="navigate" role="link">Retour</button>
+        </router-link>
+    </div>
+    <div class="second-container" v-if="error_message == false">
+        <ul class="first-wrapper">
+            <li class="date">{{  date  }}</li>
+            <li class="vent">Vents: {{ vitesseVent }} km/h direction {{  vent  }}</li> 
+            <li v-if="precipitationsPluie != ''" class="precipitationsPluie">{{ precipitationsPluie }}</li>
+            <li v-if="precipitationsNeige != ''" class="precipitationsNeige">{{ precipitationsNeige }}</li>
+        </ul>
+        <ul class="second-wrapper">
+            <li class="temperature">{{ temperature }}°</li>
+            <li class="ville">{{ ville }}</li>
+            <li class="etat-du-ciel">{{ etatCiel }}</li>
+            <li><img :src="lienImg" alt style="width: 10rem;"></li>  
+        </ul>
+        <router-link to="/selection" custom v-slot="{ navigate }">
+            <button @click="navigate" @keypress.enter="navigate" role="link">Retour</button>
+        </router-link>
+    </div>
+</div>
+    
