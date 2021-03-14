@@ -18,7 +18,7 @@ export default tpl({
             if (this.lang == 'en') {
                 this.lang = 'fr'
                 this.title = 'Junior Programmer'
-                this.introduction = 'Always on the lookout for new technologies, I am particularly interested in what is under the front-end layer of applications, software and websites.'
+                this.introduction = 'Always on the lookout for new technologies, I am particularly interested in what is under the front-end layer of applications, softwares and websites.'
                 this.projectDisplay = 'You will find by clicking on the link below an example of a small weather application using VueJs technology in order to use a REST API, process and display data received.'
                 this.aboutMe = 'To find out more about me or contact me:'
                 this.seeProject = 'See the project'
