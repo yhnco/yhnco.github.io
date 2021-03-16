@@ -11,7 +11,9 @@
         </div>
         <div id="second-item">
             <div id="first-project">
-                <img src="media/images/application_meteorologique.PNG" alt style="width: 15rem;"> 
+                <router-link to="/selection" custom v-slot="{ navigate }">
+                    <img src="media/images/application_meteorologique.PNG" alt style="width: 15rem;" @click="navigate" @keypress.enter="navigate" role="link"> 
+                </router-link>             
                 <router-link to="/selection" custom v-slot="{ navigate }">
                     <button @click="navigate" @keypress.enter="navigate" role="link">{{ seeProject }}</button>
                 </router-link>
