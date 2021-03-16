@@ -5,39 +5,61 @@
         <h2>{{ title }}</h2>   
     </header>
     <div class="content-wrapper">
-        <p>{{ introduction }}</p> 
-            <img src="media/images/iconfinder_Development_5355692.png" alt style="width: 8rem;"> 
-        <p>{{ projectDisplay }}</p>
-            <router-link to="/selection" custom v-slot="{ navigate }">
-                <button @click="navigate" @keypress.enter="navigate" role="link">{{ seeProject }}</button>
-            </router-link>
-        <p>{{ aboutMe }}</p>
+        <div id="first-item">
+            <p>{{ introduction }}</p> 
+            <img src="media/images/iconfinder_Development_5355692.png" alt style="width: 15rem;"> 
+        </div>
+        <div id="second-item">
+            <div id="first-project">
+                <img src="media/images/application_meteorologique.PNG" alt style="width: 15rem;"> 
+                <router-link to="/selection" custom v-slot="{ navigate }">
+                    <button @click="navigate" @keypress.enter="navigate" role="link">{{ seeProject }}</button>
+                </router-link>
+            </div>
+            <p>{{ projectDisplay }}</p>   
+        </div>
     </div>
-    
+   <footer>
     <ul id="infos">
-        <li>
+        <li>  
+            <div class="img-container">
+                <a target="_blank" href="https://www.linkedin.com/in/yohan-coderre-3522221a3/">
+                    <img src="media/images/linkedin.png" alt style="width: 2rem;">
+                </a>
+            </div>              
+            <br>
             <a target="_blank" href="https://www.linkedin.com/in/yohan-coderre-3522221a3/">
-                <img src="media/images/linkedin.png" alt style="width: 2rem;">
-                <br>
-                LinkedIn
+                <p>LinkedIn</p>
             </a>
         </li>
         <li>
-            <a target="_blank" href="mailto:yohan.coderre@outlook.com"><img src="media/images/email.webp" alt style="width: 2rem;">
-                <br>
-                yohan.coderre@outlook.com
+            <div class="img-container">
+                <a target="_blank" href="mailto:yohan.coderre@outlook.com">
+                    <img src="media/images/email.webp" alt style="width: 2rem;">
+                </a>
+            </div>
+            <br>
+            <a target="_blank" href="mailto:yohan.coderre@outlook.com">
+                <p>
+                    yohan.coderre@outlook.com
+                </p>
             </a>
-            </li>
-        <li>
+        </li>
+        <li>  
+            <div class="img-container">
+                <a target="_blank" href="media/CV-Yohan-Coderre-Web.pdf">
+                    <img src="media/images/curriculum.png" alt style="width: 2rem;">
+                </a>
+            </div>
+            <br>
             <a target="_blank" href="media/CV-Yohan-Coderre-Web.pdf">
-                <img src="media/images/curriculum.png" alt style="width: 2rem;">
-                <br>
-                Curriculum Vitae
+                <p>
+                    Curriculum Vitae
+                </p>
             </a>
         </li>
     </ul>
-   <footer>
-   <p>&copy Copyright Yohan Coderre 2021</p> 
+   <p id="copyright">&copy Copyright Yohan Coderre 2021</p> 
    </footer>
 </div>
 
