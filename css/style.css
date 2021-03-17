@@ -381,6 +381,11 @@ main {
 
 @media screen and (max-width: 600px) {
 
+    .first-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
     #first-item {
         align-items: center;
         flex-direction: column;
@@ -443,41 +448,7 @@ main {
   }
 
   @media screen and (max-width: 500px) {
-
-    #first-item {
-        align-items: center;
-        flex-direction: column;
-    }
-
-    #first-item li {
-        margin-top: 10px;
-    }
-
-    #first-item p {
-        text-align: center;
-        padding: 0px;
-    }
-
-    #second-item {
-        align-items: center;
-        flex-direction: column;
-    }
-
-    #second-item li {
-        margin-top: 10px;
-    }
-
-    #second-item p {
-        margin-top: 24px;
-        text-align: center;
-        padding: 0px;
-    }
-
-    #first-project img {
-        margin-top: 24px;
-        margin-bottom: 24px;
-    }
-
+ 
     #accueil h1, h2, p {
         max-width: 480px;
     }
@@ -494,12 +465,6 @@ main {
 
     #infos {
         max-width: 440px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #accueil footer {
-        margin-top: 3vh;
     }
   }
 
