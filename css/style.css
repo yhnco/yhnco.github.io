@@ -264,6 +264,10 @@ main {
     flex-basis: 0;
 }
 
+#first-project img:hover {
+    cursor: pointer;
+}
+
 #infos {
     margin-top: 12vh;
     list-style-type: none;
