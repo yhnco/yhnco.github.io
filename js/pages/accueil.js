@@ -7,7 +7,7 @@ export default tpl({
             accueil: '',
             lang: 'en',
             title: 'Programmeur Junior',
-            introduction: 'Toujours à l\'affut des nouvelles technologies, je suis particulièrement interressé par ce qui se trouve sous la couche front-end des applications, logiciels et sites web.',
+            introduction: 'Toujours à l\'affut des nouvelles technologies, je suis particulièrement intérressé par ce qui se trouve sous la couche front-end des applications, logiciels et sites web.',
             projectDisplay: 'Vous trouverez, en cliquant sur le lien, un exemple d\'une petite application météo utilisant la technologie VueJs dans le but de faire appel à un REST API, traiter et afficher les données reçues.',
             seeProject: 'Voir le projet'
         }
@@ -23,7 +23,7 @@ export default tpl({
             } else {
                 this.lang = 'en'
                 this.title = 'Programmeur Junior'
-                this.introduction = 'Toujours à l\'affut des nouvelles technologies, je suis particulièrement interressé par ce qui se trouve sous la couche front-end des applications, logiciels et sites web.'
+                this.introduction = 'Toujours à l\'affut des nouvelles technologies, je suis particulièrement intérressé par ce qui se trouve sous la couche front-end des applications, logiciels et sites web.'
                 this.projectDisplay = 'Vous trouverez, en cliquant sur le lien, un exemple d\'une petite application utilisant la technologie VueJs dans le but de faire appel à un REST API, traiter et afficher les données recues.'
                 this.seeProject = 'Voir le projet'
             }
