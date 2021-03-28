@@ -7,6 +7,11 @@ export default tpl({
             ville: ""
         }
     },
+
+    mounted() {
+        window.scrollTo(500, 0)
+    },
+
     methods: {
         login(e) {
             e.preventDefault()
